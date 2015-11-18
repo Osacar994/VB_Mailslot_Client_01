@@ -1,0 +1,105 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Mailslot_Client
+</name>
+</assembly>
+<members>
+<member name="T:Mailslot_Client.MailslotClient.FileDesiredAccess">
+	<summary>
+ Desired Access of File/Device
+ </summary>
+</member><member name="T:Mailslot_Client.MailslotClient.FileShareMode">
+	<summary>
+ File share mode
+ </summary>
+</member><member name="T:Mailslot_Client.MailslotClient.FileCreationDisposition">
+	<summary>
+ File Creation Disposition
+ </summary>
+</member><member name="T:Mailslot_Client.MailslotClient.SafeMailslotHandle">
+	<summary>
+ Represents a wrapper class for a mailslot handle. 
+ </summary>
+</member><member name="M:Mailslot_Client.MailslotClient.NativeMethod.CreateFile(System.String,Mailslot_Client.MailslotClient.FileDesiredAccess,Mailslot_Client.MailslotClient.FileShareMode,System.IntPtr,Mailslot_Client.MailslotClient.FileCreationDisposition,System.Int32,System.IntPtr)">
+	<summary>
+ Creates or opens a file, directory, physical disk, volume, console
+ buffer, tape drive, communications resource, mailslot, or named pipe.
+ </summary>
+	<param name="fileName">
+ The name of the file or device to be created or opened.
+ </param>
+	<param name="desiredAccess">
+ The requested access to the file or device, which can be summarized
+ as read, write, both or neither (zero).
+ </param>
+	<param name="shareMode">
+ The requested sharing mode of the file or device, which can be read,
+ write, both, delete, all of these, or none (refer to the following
+ table).
+ </param>
+	<param name="securityAttributes">
+ A SECURITY_ATTRIBUTES object that contains two separate but related
+ data members: an optional security descriptor, and a Boolean value
+ that determines whether the returned handle can be inherited by
+ child processes.
+ </param>
+	<param name="creationDisposition">
+ An action to take on a file or device that exists or does not exist.
+ </param>
+	<param name="flagsAndAttributes">
+ The file or device attributes and flags.
+ </param>
+	<param name="hTemplateFile">Handle to a template file.</param>
+	<returns>
+ If the function succeeds, the return value is an open handle to the
+ specified file, device, named pipe, or mail slot.
+ If the function fails, the return value is an invalid handle.
+ </returns>
+</member><member name="M:Mailslot_Client.MailslotClient.NativeMethod.WriteFile(Mailslot_Client.MailslotClient.SafeMailslotHandle,System.Byte[],System.Int32,System.Int32@,System.IntPtr)">
+	<summary>
+ Writes data to the specified file or input/output (I/O) device.
+ </summary>
+	<param name="handle">
+ A handle to the file or I/O device (for example, a file, file stream,
+ physical disk, volume, console buffer, tape drive, socket,
+ communications resource, mailslot, or pipe).
+ </param>
+	<param name="bytes">
+ A buffer containing the data to be written to the file or device.
+ </param>
+	<param name="numBytesToWrite">
+ The number of bytes to be written to the file or device.
+ </param>
+	<param name="numBytesWritten">
+ The number of bytes written when using a synchronous IO.
+ </param>
+	<param name="overlapped">
+ A pointer to an OVERLAPPED structure is required if the file was
+ opened with FILE_FLAG_OVERLAPPED.
+ </param>
+	<returns>
+ If the function succeeds, the return value is true. If the function
+ fails, or is completing asynchronously, the return value is false.
+ </returns>
+</member><member name="T:Mailslot_Client.MailslotClient.NativeMethod">
+	<summary>
+ The class exposes Windows APIs to be used in this code sample.
+ </summary>
+</member><member name="P:Mailslot_Client.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Mailslot_Client.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Mailslot_Client.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
